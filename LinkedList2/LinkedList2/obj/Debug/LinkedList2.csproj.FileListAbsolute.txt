@@ -1,0 +1,7 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\bin\Debug\LinkedList2.exe.config
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\bin\Debug\LinkedList2.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\bin\Debug\LinkedList2.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\obj\Debug\LinkedList2.csprojAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\obj\Debug\LinkedList2.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\obj\Debug\LinkedList2.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\LinkedList2\LinkedList2\obj\Debug\LinkedList2.pdb
