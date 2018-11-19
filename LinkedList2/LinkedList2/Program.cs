@@ -147,6 +147,9 @@ namespace AlgorithmsDataStructures
             {
                 Node node = head;
                 bool check = false;
+                if (Find(_nodeAfter.value) == null)
+                   return false;
+          
                 if (node == _nodeAfter && count == 1)
                 {
                     check = true;
