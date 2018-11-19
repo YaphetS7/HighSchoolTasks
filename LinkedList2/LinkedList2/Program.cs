@@ -52,6 +52,8 @@ namespace AlgorithmsDataStructures
                 {
                     if (node.value == _value)
                         nodes.Add(node);
+
+                    node = node.next;
                 }
                 
                 return nodes;
