@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList2
 {
-    class AlgorithmsAndStructures
-    {
+   
         public class Node
         {
             public int value;
@@ -196,9 +195,6 @@ namespace LinkedList2
                 Console.Write(tail.value + "\t");
             }
         }
-        static void Main(string[] args)
-        {
-           
-        }
-    }
+        
+    
 }
