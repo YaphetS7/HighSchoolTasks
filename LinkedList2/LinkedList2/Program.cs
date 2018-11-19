@@ -55,7 +55,7 @@ namespace AlgorithmsDataStructures
 
                     node = node.next;
                 }
-                
+
                 return nodes;
             }
 
@@ -66,7 +66,13 @@ namespace AlgorithmsDataStructures
                 if (node.value == _value)
                 {
                     check = true;
-                    head = node.next;
+                    if (count == 1)
+                    {
+                        head = null;
+                        tail = null;
+                    }
+                    else
+                        head = node.next;
                 }
                 else
                 {
@@ -74,7 +80,7 @@ namespace AlgorithmsDataStructures
                     {
                         if (node.next != null && (node.next.value == _value))
                         {
-                           
+
                             temp = node;
                             check = true;
                             break;
@@ -100,7 +106,7 @@ namespace AlgorithmsDataStructures
                 }
                 if (check)
                     count--;
-                return check; 
+                return check;
             }
 
             public void RemoveAll(int _value)
@@ -115,7 +121,7 @@ namespace AlgorithmsDataStructures
                 }
                 for (int i = 0; i < k; i++)
                     Remove(_value);
-                count -= k;
+                
             }
 
             public void Clear()
@@ -127,7 +133,7 @@ namespace AlgorithmsDataStructures
 
             public int Count()
             {
-                return count; 
+                return count;
             }
 
             public bool InsertAfter(Node _nodeAfter, Node _nodeToInsert)
@@ -159,7 +165,7 @@ namespace AlgorithmsDataStructures
                 {
                     while (node.next != null && node.next != _nodeAfter)
                     {
-                        
+
                         node = node.next;
                     }
                     if (node.next == tail && _nodeAfter == node.next)
@@ -183,17 +189,13 @@ namespace AlgorithmsDataStructures
                     count++;
                 return check;
             }
-            public void PrintList()
-            {
-                Node node = head;
-                while (node != tail)
-                {
-                    Console.Write(node.value + "\t");
-                    node = node.next;
-                }
-                Console.Write(tail.value + "\t");
-            }
+           
         }
-        
+
+
+       
+
+
+    
     
 }
