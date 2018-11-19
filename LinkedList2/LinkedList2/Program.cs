@@ -145,11 +145,13 @@ namespace AlgorithmsDataStructures
 
             public bool InsertAfter(Node _nodeAfter, Node _nodeToInsert)
             {
+                if (count == 0)
+                {
+                     AddInTail(_nodeToInsert);
+                     return true;
+                }
                 Node node = head;
                 bool check = false;
-                if (Find(_nodeAfter.value) == null)
-                   return false;
-          
                 if (node == _nodeAfter && count == 1)
                 {
                     check = true;
