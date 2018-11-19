@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace AlgorithmsDataStructures
 {
-   
         public class Node
         {
             public int value;
@@ -61,67 +60,75 @@ namespace AlgorithmsDataStructures
 
             public bool Remove(int _value)
             {
-                Node node = head, temp = null;
-                bool check = false;
-                if (node.value == _value)
+                if (count > 0)
                 {
-                    check = true;
-                    if (count == 1)
+                    Node node = head, temp = null;
+                    bool check = false;
+                    if (node.value == _value)
                     {
-                        head = null;
-                        tail = null;
-                    }
-                    else
-                        head = node.next;
-                }
-                else
-                {
-                    while (!check && node != null)
-                    {
-                        if (node.next != null && (node.next.value == _value))
+                        check = true;
+                        if (count == 1)
                         {
-
-                            temp = node;
-                            check = true;
-                            break;
-                        }
-                        node = node.next;
-                    }
-                    if (check)
-                    {
-                        if (temp.next == tail)
-                        {
-                            tail = temp;
-                            tail.next = null;
+                            head = null;
+                            tail = null;
                         }
                         else
-                        {
-                            temp.next = node.next.next;
-                            if (temp.next == tail)
-                                tail = temp.next;
-                        }
+                            head = node.next;
                     }
+                    else
+                    {
+                        while (!check && node != null)
+                        {
+                            if (node.next != null && (node.next.value == _value))
+                            {
+
+                                temp = node;
+                                check = true;
+                                break;
+                            }
+                            node = node.next;
+                        }
+                        if (check)
+                        {
+                            if (temp.next == tail)
+                            {
+                                tail = temp;
+                                tail.next = null;
+                            }
+                            else
+                            {
+                                temp.next = node.next.next;
+                                if (temp.next == tail)
+                                    tail = temp.next;
+                            }
+                        }
 
 
+                    }
+                    if (check)
+                        count--;
+                    return check;
                 }
-                if (check)
-                    count--;
-                return check;
+                else
+                    return false;
             }
 
             public void RemoveAll(int _value)
             {
-                Node node = head;
-                int k = 0;
-                while (node != null)
+                if (count > 0)
                 {
-                    if (node.value == _value)
-                        k++;
-                    node = node.next;
+                    Node node = head;
+                    int k = 0;
+                    while (node != null)
+                    {
+                        if (node.value == _value)
+                            k++;
+                        node = node.next;
+                    }
+                    for (int i = 0; i < k; i++)
+                        Remove(_value);
                 }
-                for (int i = 0; i < k; i++)
-                    Remove(_value);
-                
+
             }
 
             public void Clear()
@@ -189,13 +196,12 @@ namespace AlgorithmsDataStructures
                     count++;
                 return check;
             }
-           
         }
-
-
        
 
+      
 
-    
+
+
     
 }
