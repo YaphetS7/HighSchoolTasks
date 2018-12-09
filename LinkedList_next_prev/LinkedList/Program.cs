@@ -72,6 +72,8 @@ namespace AlgorithmsDataStructures
 
         public bool Remove(int _value)
         {
+            if (count == 0)
+                return false;
             Node node, temp;
             node = Find(_value);
 
@@ -123,6 +125,8 @@ namespace AlgorithmsDataStructures
 
         public void RemoveAll(int _value)
         {
+            if (count == 0)
+                return;
             Node node = head;
             int cnt = 0;
             while (node != null)
