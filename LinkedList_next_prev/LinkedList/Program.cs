@@ -28,7 +28,6 @@ namespace AlgorithmsDataStructures
             head = null;
             tail = null;
         }
-
         public void AddInTail(Node _item)
         {
             if (head == null)
@@ -78,12 +77,22 @@ namespace AlgorithmsDataStructures
 
             if (node == head)
             {
-                temp = node.next;
-                node = null;
-                head = temp;
-                head.prev = null;
-                count--;
-                return true;
+                if (count > 1)
+                {
+                    temp = node.next;
+                    node = null;
+                    head = temp;
+                    head.prev = null;
+                    count--;
+                    return true;
+                }
+                else
+                {
+                    head = null;
+                    tail = null;
+                    count--;
+                    return true;
+                }
               
             }
             else
