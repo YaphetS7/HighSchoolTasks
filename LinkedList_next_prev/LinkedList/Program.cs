@@ -19,6 +19,15 @@ namespace AlgorithmsDataStructures
 
     public class LinkedList2
     {
+        public void Print()
+        {
+            Node node = head;
+            while (node != null)
+            {
+                Console.Write(node.value + "\t");
+                node = node.next;
+            }
+        }
         public int count = 0;
         public Node head;
         public Node tail;
@@ -153,13 +162,22 @@ namespace AlgorithmsDataStructures
 
         public void InsertAfter(Node _nodeAfter, Node _nodeToInsert)
         {
-            if (_nodeAfter == null)
+            if (_nodeAfter == null || _nodeAfter == tail)
             {
                 AddInTail(_nodeToInsert);
                 return;
             }
+            if (_nodeAfter == head)
+            {
+                Node lol = _nodeAfter.next;
+                _nodeAfter.next = _nodeToInsert;
+                _nodeToInsert.next = lol;
+                lol.prev = _nodeToInsert;
+                _nodeToInsert.prev = _nodeAfter;
+                return;
+            }
+
             Node node, newnode, temp;
-            temp = null;
             node = _nodeAfter;
             temp = node.next;
             newnode = _nodeToInsert;
