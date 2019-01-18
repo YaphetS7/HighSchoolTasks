@@ -57,18 +57,21 @@ namespace AlgorithmsDataStructures
 
         public void Insert(T itm, int index)
         {
-            if (index == count)
+            if (index <= count)
             {
-                Append(itm);
-            }
-            else
-            {
-                if (count == capacity)
-                    MakeArray(capacity * 2);
-                count++;
-                for (int q = count - 1; q >= index; q--)
-                    array[q + 1] = array[q];
-                array[index] = itm;
+                if (index == count)
+                {
+                    Append(itm);
+                }
+                else
+                {
+                    if (count == capacity)
+                        MakeArray(capacity * 2);
+                    count++;
+                    for (int q = count - 1; q >= index; q--)
+                        array[q + 1] = array[q];
+                    array[index] = itm;
+                }
             }
         }
 
