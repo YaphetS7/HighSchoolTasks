@@ -55,61 +55,48 @@ namespace AlgorithmsDataStructures
 
         public void Insert(T itm, int index)
         {
-            try
+
+            if (index <= count && index >= 0)
             {
-                if (index <= count && index >= 0)
+                if (index == count)
                 {
-                    if (index == count)
-                    {
-                        Append(itm);
-                    }
-                    else
-                    {
-                        if (count == capacity)
-                            MakeArray(capacity * 2);
-                        count++;
-                        for (int q = count - 1; q >= index; q--)
-                            array[q + 1] = array[q];
-                        array[index] = itm;
-                    }
+                    Append(itm);
                 }
                 else
                 {
-                    throw new IndexOutOfRangeException();
+                    if (count == capacity)
+                        MakeArray(capacity * 2);
+                    count++;
+                    for (int q = count - 1; q >= index; q--)
+                        array[q + 1] = array[q];
+                    array[index] = itm;
                 }
             }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            else
+                throw new IndexOutOfRangeException();
+                
+           
         }
 
         public void Remove(int index)
         {
-            try
+
+            if (index >= 0 && index < count)
             {
-                if (index >= 0 && index < count)
+                for (int j = index + 1; j < count; j++)
+                    array[j - 1] = array[j];
+                count--;
+                if (count < capacity * 0.5)
                 {
-                    for (int j = index + 1; j < count; j++)
-                        array[j - 1] = array[j];
-                    count--;
-                    if (count < capacity * 0.5)
-                    {
-                        if (capacity / 1.5 > 16)
-                            MakeArray(Convert.ToInt32(capacity / 1.5));
-                        else
-                            MakeArray(16);
-                    }
-                }
-                else
-                {
-                    throw new IndexOutOfRangeException();
+                    if (capacity / 1.5 > 16)
+                        MakeArray(Convert.ToInt32(capacity / 1.5));
+                    else
+                        MakeArray(16);
                 }
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            else
+                throw new IndexOutOfRangeException();
+             
         }
     }
 }
