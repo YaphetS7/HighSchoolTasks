@@ -55,21 +55,32 @@ namespace AlgorithmsDataStructures
 
         public void Insert(T itm, int index)
         {
-            if (index <= count && index >= 0)
+            try
             {
-                if (index == count)
+                if (index <= count && index >= 0)
                 {
-                    Append(itm);
+                    if (index == count)
+                    {
+                        Append(itm);
+                    }
+                    else
+                    {
+                        if (count == capacity)
+                            MakeArray(capacity * 2);
+                        count++;
+                        for (int q = count - 1; q >= index; q--)
+                            array[q + 1] = array[q];
+                        array[index] = itm;
+                    }
                 }
                 else
                 {
-                    if (count == capacity)
-                        MakeArray(capacity * 2);
-                    count++;
-                    for (int q = count - 1; q >= index; q--)
-                        array[q + 1] = array[q];
-                    array[index] = itm;
+                    throw new IndexOutOfRangeException();
                 }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
 
