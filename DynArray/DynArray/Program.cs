@@ -86,18 +86,29 @@ namespace AlgorithmsDataStructures
 
         public void Remove(int index)
         {
-            if (index >= 0 && index < count)
+            try
             {
-                for (int j = index + 1; j < count; j++)
-                    array[j - 1] = array[j];
-                count--;
-                if (count < capacity * 0.5)
+                if (index >= 0 && index < count)
                 {
-                    if (capacity / 1.5 > 16)
-                        MakeArray(Convert.ToInt32(capacity / 1.5));
-                    else
-                        MakeArray(16);
+                    for (int j = index + 1; j < count; j++)
+                        array[j - 1] = array[j];
+                    count--;
+                    if (count < capacity * 0.5)
+                    {
+                        if (capacity / 1.5 > 16)
+                            MakeArray(Convert.ToInt32(capacity / 1.5));
+                        else
+                            MakeArray(16);
+                    }
                 }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }
