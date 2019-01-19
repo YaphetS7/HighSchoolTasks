@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace AlgorithmsDataStructures
 {
-
     public class DynArray<T>
     {
         public T[] array;
@@ -15,7 +14,6 @@ namespace AlgorithmsDataStructures
             count = 0;
             MakeArray(16);
         }
-
         public void MakeArray(int new_capacity)
         {
             capacity = new_capacity;
@@ -57,7 +55,7 @@ namespace AlgorithmsDataStructures
 
         public void Insert(T itm, int index)
         {
-            if (index <= count)
+            if (index <= count && index >= 0)
             {
                 if (index == count)
                 {
