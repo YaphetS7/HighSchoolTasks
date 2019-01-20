@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace AlgorithmsDataStructures
 {
+    
 
     public class DynArray<T>
     {
@@ -17,7 +18,7 @@ namespace AlgorithmsDataStructures
             count = 0;
             MakeArray(16);
         }
-
+    
         private void MakeArray(int new_capacity)
         {
 
@@ -93,10 +94,10 @@ namespace AlgorithmsDataStructures
                 for (int j = index + 1; j < count; j++)
                     array[j - 1] = array[j];
                 count--;
-                if (count < capacity * 0.5)
+                if (count < capacity * 0.5 )
                 {
                     if (capacity / 1.5 > 16)
-                        MakeArray(Convert.ToInt32(capacity / 1.5));
+                        MakeArray(Convert.ToInt32(Math.Floor(capacity / 1.5)));
                     else
                         MakeArray(16);
                 }
