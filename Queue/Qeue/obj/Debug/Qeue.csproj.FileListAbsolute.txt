@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Qeue\Qeue\bin\Debug\Qeue.exe.config
+C:\Users\Даниил\source\repos\Qeue\Qeue\bin\Debug\Qeue.exe
+C:\Users\Даниил\source\repos\Qeue\Qeue\bin\Debug\Qeue.pdb
+C:\Users\Даниил\source\repos\Qeue\Qeue\obj\Debug\Qeue.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Qeue\Qeue\obj\Debug\Qeue.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Qeue\Qeue\obj\Debug\Qeue.exe
+C:\Users\Даниил\source\repos\Qeue\Qeue\obj\Debug\Qeue.pdb
