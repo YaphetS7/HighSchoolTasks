@@ -83,6 +83,8 @@ namespace AlgorithmsDataStructures
 
             if (index >= 0 && index < count)
             {
+                if (index == count - 1)
+                    array[index] = default(T);
                 for (int j = index + 1; j < count; j++)
                     array[j - 1] = array[j];
                 count--;
