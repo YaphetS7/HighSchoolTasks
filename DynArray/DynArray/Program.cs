@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
+
 namespace AlgorithmsDataStructures
 {
+
     public class DynArray<T>
     {
         public T[] array;
@@ -14,10 +17,11 @@ namespace AlgorithmsDataStructures
             count = 0;
             MakeArray(16);
         }
-        public void MakeArray(int new_capacity)
+
+        private void MakeArray(int new_capacity)
         {
-            capacity = new_capacity;
-            if (new_capacity > 16)
+
+            if (new_capacity >= capacity)
             {
                 T[] temp = new T[new_capacity];
                 if (array != null)
@@ -29,12 +33,15 @@ namespace AlgorithmsDataStructures
             else
             {
                 T[] temp = new T[new_capacity];
-                if (array != null)
-                    array.CopyTo(temp, 0);
+                for (int i = 0; i < new_capacity; i++)
+                {
+                    temp[i] = array[i];
+                }
                 array = new T[new_capacity];
                 if (array != null)
                     temp.CopyTo(array, 0);
             }
+            capacity = new_capacity;
         }
 
         public T GetItem(int index)
@@ -42,7 +49,7 @@ namespace AlgorithmsDataStructures
             if (index >= 0 && index < count)
                 return array[index];
             else
-                return default(T); 
+                return default(T);
         }
 
         public void Append(T itm)
@@ -64,7 +71,7 @@ namespace AlgorithmsDataStructures
                 }
                 else
                 {
-                    if (count == capacity)
+                    if ((count == capacity - 1) || (count == capacity))
                         MakeArray(capacity * 2);
                     count++;
                     for (int q = count - 1; q >= index; q--)
@@ -74,8 +81,8 @@ namespace AlgorithmsDataStructures
             }
             else
                 throw new IndexOutOfRangeException();
-                
-           
+
+
         }
 
         public void Remove(int index)
@@ -83,8 +90,6 @@ namespace AlgorithmsDataStructures
 
             if (index >= 0 && index < count)
             {
-                if (index == count - 1)
-                    array[index] = default(T);
                 for (int j = index + 1; j < count; j++)
                     array[j - 1] = array[j];
                 count--;
@@ -98,7 +103,8 @@ namespace AlgorithmsDataStructures
             }
             else
                 throw new IndexOutOfRangeException();
-             
+
         }
     }
 }
+
