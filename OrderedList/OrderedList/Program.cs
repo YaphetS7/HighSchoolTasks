@@ -162,6 +162,8 @@ namespace AlgorithmsDataStructures
             if (count == 1)
             {
                 head = null;
+                head.next = null;
+                tail.prev = null;
                 tail = null;
                 count = 0;
                 return;
@@ -184,12 +186,14 @@ namespace AlgorithmsDataStructures
             if (node == head)
             {
                 head = head.next;
+                head.prev = null;
                 count--;
                 return;
             }
             if (node == tail)
             {
                 tail = tail.prev;
+                tail.next = null;
                 count--;
                 return;
             }
@@ -202,7 +206,9 @@ namespace AlgorithmsDataStructures
         {
             _ascending = asc;
             count = 0;
+            head.next = null;
             head = null;
+            tail.prev = null;
             tail = null;
         }
 
