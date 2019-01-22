@@ -5,10 +5,8 @@ namespace AlgorithmsDataStructures
 {
     public class Node<T>
     {
-        
         public T value;
         public Node<T> next, prev;
-
         public Node(T _value)
         {
             value = _value;
@@ -162,8 +160,6 @@ namespace AlgorithmsDataStructures
             if (count == 1)
             {
                 head = null;
-                head.next = null;
-                tail.prev = null;
                 tail = null;
                 count = 0;
                 return;
