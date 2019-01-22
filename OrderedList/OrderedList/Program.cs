@@ -69,6 +69,11 @@ namespace AlgorithmsDataStructures
 
         public void Add(T value)
         {
+            int x;
+            if (_ascending)
+                x = 1;
+            else
+                x = -1;
             Node<T> newnode = new Node<T>(value);
             if (count == 0)
             {
@@ -77,84 +82,61 @@ namespace AlgorithmsDataStructures
                 count = 1;
                 return;
             }
-            if (_ascending)
+            if (Compare((head.value), value) == 0)
             {
-                Node<T> node = head;
-                if (Compare(node.value, value) == 1)
-                {
-                    head.prev = newnode;
-                    newnode.next = head;
-                    head = newnode;
-                    count++;
-                    return;
-                }
-                while (node != null && Compare(node.value, value) == -1 && Compare(node.value, value) != 0)
-                {
-                    node = node.next;
-                }
-                if (node == null)
-                {
-                    tail.next = newnode;
-                    newnode.prev = tail;
-                    tail = newnode;
-                    count++;
-                    return;
-                }
-                if (count == 1)
-                {
-                    tail = newnode;
-                    head.next = tail;
-                    tail.prev = head;
-                    count++;
-                    return;
-                }
-                node = node.prev;
-                newnode.next = node.next;
-                newnode.prev = node;
-                node.next = newnode;
-                node = newnode.next;
-                node.prev = newnode;
+                newnode.next = head;
+                head.prev = newnode;
+                head = newnode;
                 count++;
+                return;
             }
-            else
+            if (Compare(tail.value, value) == 0)
             {
-                Node<T> node = head;
-                if (Compare(node.value, value) == -1)
-                {
-                    head.prev = newnode;
-                    newnode.next = head;
-                    head = newnode;
-                    count++;
-                    return;
-                }
-                while (node != null && Compare(node.value, value) == 1 && Compare(node.value, value) != 0)
-                {
-                    node = node.next;
-                }
-                if (node == null)
-                {
-                    tail.next = newnode;
-                    newnode.prev = tail;
-                    tail = newnode;
-                    count++;
-                    return;
-                }
-                if (count == 1)
-                {
-                    tail = newnode;
-                    head.next = tail;
-                    tail.prev = head;
-                    count++;
-                    return;
-                }
-                node = node.prev;
-                newnode.next = node.next;
-                newnode.prev = node;
-                node.next = newnode;
-                node = newnode.next;
-                node.prev = newnode;
+                newnode.prev = tail;
+                tail.next = newnode;
+                tail = newnode;
                 count++;
+                return;
             }
+            Node<T> node = head;
+            if (Compare(node.value, value) == x)
+            {
+                head.prev = newnode;
+                newnode.next = head;
+                head = newnode;
+                count++;
+                return;
+            }
+            while (node != null && Compare(node.value, value) == -x && Compare(node.value, value) != 0)
+            {
+                node = node.next;
+            }
+            if (node == null)
+            {
+                tail.next = newnode;
+                newnode.prev = tail;
+                tail = newnode;
+                count++;
+                return;
+            }
+            if (count == 1)
+            {
+                tail = newnode;
+                head.next = tail;
+                tail.prev = head;
+                count++;
+                return;
+            }
+            node = node.prev;
+            newnode.next = node.next;
+            newnode.prev = node;
+            node.next = newnode;
+            node = newnode.next;
+            node.prev = newnode;
+            count++;
+
+
+
         }
 
         public Node<T> Find(T val)
