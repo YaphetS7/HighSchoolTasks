@@ -5,6 +5,7 @@ namespace AlgorithmsDataStructures
 {
     public class Node<T>
     {
+        
         public T value;
         public Node<T> next, prev;
 
@@ -168,10 +169,17 @@ namespace AlgorithmsDataStructures
             if (count == 2)
             {
                 if (node == head)
+                {
                     head = head.next;
+                    head.prev = null;
+                }
                 else
+                {
                     tail = tail.prev;
+                    tail.next = null;
+                }
                 count = 1;
+                return;
             }
             if (node == head)
             {
