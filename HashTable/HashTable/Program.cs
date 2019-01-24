@@ -42,7 +42,7 @@ namespace AlgorithmsDataStructures
             if (i >= size)
             {
                 i = 0;
-                while (slots[i] != null)
+                while (i < size && slots[i] != null)
                     i++;
             }
             if (i >= size)
