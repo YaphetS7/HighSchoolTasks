@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\temp\temp\bin\Debug\temp.exe.config
+C:\Users\Даниил\source\repos\temp\temp\bin\Debug\temp.exe
+C:\Users\Даниил\source\repos\temp\temp\bin\Debug\temp.pdb
+C:\Users\Даниил\source\repos\temp\temp\obj\Debug\temp.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\temp\temp\obj\Debug\temp.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\temp\temp\obj\Debug\temp.exe
+C:\Users\Даниил\source\repos\temp\temp\obj\Debug\temp.pdb

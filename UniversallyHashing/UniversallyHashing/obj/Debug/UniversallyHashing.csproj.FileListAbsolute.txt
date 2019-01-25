@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\obj\Debug\UniversallyHashing.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\obj\Debug\UniversallyHashing.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\bin\Debug\UniversallyHashing.exe.config
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\bin\Debug\UniversallyHashing.exe
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\bin\Debug\UniversallyHashing.pdb
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\obj\Debug\UniversallyHashing.exe
+C:\Users\Даниил\source\repos\UniversallyHashing\UniversallyHashing\obj\Debug\UniversallyHashing.pdb
