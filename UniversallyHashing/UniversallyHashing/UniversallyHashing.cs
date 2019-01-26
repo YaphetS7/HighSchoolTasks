@@ -1,33 +1,25 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace UniversallyHashing
 {
-    class Program
+
+    public delegate long Func(string value, long size);
+
+    class UniversallyHashing
     {
         static void Main(string[] args)
         {
-
+            List<Func> list = new List<Func>();
+            Func func1 = Hash1;
+            Func func2 = Hash1;
+            Func func3 = Hash3;
+            list.Add(func1);
+            list.Add(func2);
+            list.Add(func3);
+            HashTable a = new HashTable(17, 3, list);
         }
-    }
-    public class HashTable
-    {
-        public int size;
-        public int step;
-        public string[] slots;
-        public int number_of_hash_func;
-
-        public HashTable(int sz, int stp, int number_of_hash_func)
-        {
-            if (number_of_hash_func <= 0 || number_of_hash_func >= 4)
-                throw new InvalidOperationException();
-            this.number_of_hash_func = number_of_hash_func;
-            size = sz;
-            step = stp;
-            slots = new string[size];
-            for (int i = 0; i < size; i++) slots[i] = null;
-        }
-        private long Hash1(string value)
+        public static long Hash1(string value, long size)
         {
             char[] a = new char[value.Length];
             int sum = 0;
@@ -38,7 +30,7 @@ namespace UniversallyHashing
             }
             return (sum % size);
         }
-        private long Hash2(string value)
+        public static long Hash2(string value, long size)
         {
             char[] a = new char[value.Length];
             long sum = 0;
@@ -53,7 +45,7 @@ namespace UniversallyHashing
             sum += a[0] - '0';
             return (sum % size);
         }
-        private long Hash3(string value)
+        public static long Hash3(string value, long size)
         {
             char[] a = new char[value.Length];
             long sum = 0;
@@ -72,14 +64,27 @@ namespace UniversallyHashing
             sum += a[0] - '0';
             return (sum % size);
         }
+        
+    }
+    public class HashTable
+    {
+        public int size;
+        public int step;
+        public string[] slots;
+        private Func function;
+        Random rand = new Random();
+        public HashTable(int sz, int stp, List<Func> list)
+        {
+            function = list[rand.Next(0, list.Count)];
+            size = sz;
+            step = stp;
+            slots = new string[size];
+            for (int i = 0; i < size; i++) slots[i] = null;
+        }
+      
         public long HashFun(string value)
         {
-            if (number_of_hash_func == 1)
-                return Hash1(value);
-            if (number_of_hash_func == 2)
-                return Hash2(value);
-            else
-                return Hash3(value);
+            return function(value, size);
             // всегда возвращает корректный индекс слота
             //return 0;
         }
