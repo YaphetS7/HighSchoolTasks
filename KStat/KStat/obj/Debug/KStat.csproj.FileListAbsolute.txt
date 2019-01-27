@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\KStat\KStat\bin\Debug\KStat.exe.config
+C:\Users\Даниил\source\repos\KStat\KStat\bin\Debug\KStat.exe
+C:\Users\Даниил\source\repos\KStat\KStat\bin\Debug\KStat.pdb
+C:\Users\Даниил\source\repos\KStat\KStat\obj\Debug\KStat.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\KStat\KStat\obj\Debug\KStat.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\KStat\KStat\obj\Debug\KStat.exe
+C:\Users\Даниил\source\repos\KStat\KStat\obj\Debug\KStat.pdb
