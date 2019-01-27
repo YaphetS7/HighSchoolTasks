@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\bin\Debug\NativeDictionary.exe.config
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\bin\Debug\NativeDictionary.exe
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\bin\Debug\NativeDictionary.pdb
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\obj\Debug\NativeDictionary.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\obj\Debug\NativeDictionary.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\obj\Debug\NativeDictionary.exe
+C:\Users\Даниил\source\repos\NativeDictionary\NativeDictionary\obj\Debug\NativeDictionary.pdb
