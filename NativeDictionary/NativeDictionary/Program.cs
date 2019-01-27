@@ -13,6 +13,7 @@ namespace AlgorithmsDataStructures
         {
             size = sz;
             slots = new string[size];
+            for (int i = 0; i < size; i++) slots[i] = null;
             values = new T[size];
         }
 
@@ -20,11 +21,15 @@ namespace AlgorithmsDataStructures
         {
             char[] a = new char[key.Length];
             int sum = 0;
-            for (int i = 0; i < key.Length; i++)
+            int p_pow = 7;
+            int p = 7;
+            for (int i = 1; i < key.Length; i++)
             {
                 a[i] = key[i];
-                sum += a[i] - '0';
+                sum += (a[i] - '0') * p_pow;
+                p_pow = p_pow * p;
             }
+            sum += a[0] - '0';
             return (sum % size);
         }
 
@@ -40,8 +45,11 @@ namespace AlgorithmsDataStructures
         public void Put(string key, T value)
         {
             int i = HashFun(key);
-            slots[i] = key;
-            values[i] = value;
+            if (slots[i] == null)
+            {
+                slots[i] = key;
+                values[i] = value;
+            }
             // гарантированно записываем 
             // значение value по ключу key
         }
