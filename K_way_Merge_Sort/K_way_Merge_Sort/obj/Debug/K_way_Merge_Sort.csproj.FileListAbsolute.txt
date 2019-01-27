@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\bin\Debug\K_way_Merge_Sort.exe.config
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\bin\Debug\K_way_Merge_Sort.exe
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\bin\Debug\K_way_Merge_Sort.pdb
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\obj\Debug\K_way_Merge_Sort.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\obj\Debug\K_way_Merge_Sort.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\obj\Debug\K_way_Merge_Sort.exe
+C:\Users\Даниил\source\repos\K_way_Merge_Sort\K_way_Merge_Sort\obj\Debug\K_way_Merge_Sort.pdb
