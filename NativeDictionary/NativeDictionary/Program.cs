@@ -30,6 +30,8 @@ namespace AlgorithmsDataStructures
                 p_pow = p_pow * p;
             }
             sum += a[0] - '0';
+            if (sum < 0)
+                sum *= -1;
             return (sum % size);
         }
 
