@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\bin\Debug\Exponential_Search.exe.config
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\bin\Debug\Exponential_Search.exe
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\bin\Debug\Exponential_Search.pdb
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\obj\Debug\Exponential_Search.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\obj\Debug\Exponential_Search.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\obj\Debug\Exponential_Search.exe
+C:\Users\Даниил\source\repos\Exponential_Search\Exponential_Search\obj\Debug\Exponential_Search.pdb
