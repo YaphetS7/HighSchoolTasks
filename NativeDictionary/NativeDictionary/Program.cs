@@ -59,6 +59,8 @@ namespace AlgorithmsDataStructures
         public void Put(string key, T value)
         {
             int i = HashFun(key);
+            if (slots[i] == key)
+                return;
             if (slots[i] == null)
             {
                 slots[i] = key;
