@@ -38,7 +38,19 @@ namespace AlgorithmsDataStructures
         public bool IsKey(string key)
         {
             int i = HashFun(key);
-            return (slots[i] == key);
+            if (slots[i] == key)
+            {
+                return true;
+            }
+            else
+            {
+                for (i = 0; i < size; i++)
+                    if (slots[i] == key)
+                    {
+                        return true;
+                    }
+                return false;
+            }
             // возвращает true если ключ имеется,
             // иначе false
            
@@ -52,6 +64,16 @@ namespace AlgorithmsDataStructures
                 slots[i] = key;
                 values[i] = value;
             }
+            else
+            {
+                for (i = 0; i < size; i++)
+                    if (slots[i] == null)
+                    {
+                        slots[i] = key;
+                        values[i] = value;
+                        break;
+                    }
+            }
             // гарантированно записываем 
             // значение value по ключу key
         }
@@ -62,7 +84,14 @@ namespace AlgorithmsDataStructures
             if (slots[i] == key)
                 return values[i];
             else
+            {
+                for (i = 0; i < size; i++)
+                    if (slots[i] == key)
+                    {
+                        return values[i];
+                    }
                 return default(T);
+            }
             // возвращает value для key, 
             // или null если ключ не найден
         }
