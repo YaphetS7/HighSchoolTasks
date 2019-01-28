@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\bin\Debug\Heap_Sort.exe.config
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\bin\Debug\Heap_Sort.exe
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\bin\Debug\Heap_Sort.pdb
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\obj\Debug\Heap_Sort.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\obj\Debug\Heap_Sort.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\obj\Debug\Heap_Sort.exe
+C:\Users\Даниил\source\repos\Heap_Sort\Heap_Sort\obj\Debug\Heap_Sort.pdb
