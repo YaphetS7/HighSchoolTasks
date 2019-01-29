@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\obj\Debug\NativeCache.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\obj\Debug\NativeCache.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\bin\Debug\NativeCache.exe.config
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\bin\Debug\NativeCache.exe
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\bin\Debug\NativeCache.pdb
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\obj\Debug\NativeCache.exe
+C:\Users\Даниил\source\repos\NativeCache\NativeCache\obj\Debug\NativeCache.pdb
