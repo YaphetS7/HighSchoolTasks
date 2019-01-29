@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Set\Set\bin\Debug\Set.exe.config
+C:\Users\Даниил\source\repos\Set\Set\bin\Debug\Set.exe
+C:\Users\Даниил\source\repos\Set\Set\bin\Debug\Set.pdb
+C:\Users\Даниил\source\repos\Set\Set\obj\Debug\Set.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Set\Set\obj\Debug\Set.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Set\Set\obj\Debug\Set.exe
+C:\Users\Даниил\source\repos\Set\Set\obj\Debug\Set.pdb
