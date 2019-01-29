@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\bin\Debug\Bloom_Filter.exe.config
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\bin\Debug\Bloom_Filter.exe
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\bin\Debug\Bloom_Filter.pdb
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\obj\Debug\Bloom_Filter.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\obj\Debug\Bloom_Filter.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\obj\Debug\Bloom_Filter.exe
+C:\Users\Даниил\source\repos\Bloom_Filter\Bloom_Filter\obj\Debug\Bloom_Filter.pdb
