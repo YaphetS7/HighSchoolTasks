@@ -10,44 +10,86 @@ namespace ImmutableStackAndQueue
     {
         static void Main(string[] args)
         {
-         
+           
+           
         }
     }
+    //класс, реализующий иммутабельную очередь
     public class ImmQueue<T>
     {
-        Queue<T> que = new Queue<T>();
+        private LinkedList<T> list = new LinkedList<T>();
+        //метод, добавляющий value в конец неизменяемой очереди и возвращает новую очередь
         public ImmQueue<T> Enqueue(T value)
         {
-            que.Enqueue(value);
-            return this;
+            //создаем объект данного класса, который будем возвращать
+            ImmQueue<T> temp = new ImmQueue<T>();
+            LinkedListNode<T> node = list.First;
+            //копируем значения из данного this-класса в наш обЪект, который мы только что создали
+            while (node != null)
+            {
+                temp.list.AddLast(node.Value);
+                node = node.Next;
+            }
+            //добавляем value не в this-класс, а в созданный только что объект и возвращаем его
+            temp.list.AddLast(value);
+            return temp;
         }
+        //метод, извлекающий элемент из начала неизменяемой очереди и возвращающий новую очередь
         public ImmQueue<T> Dequeue()
         {
-            que.Dequeue();
-            return this;
+            ImmQueue<T> temp = new ImmQueue<T>();
+            LinkedListNode<T> node = list.First;
+            //копируем значения из данного this-класса в наш обЪект, который мы только что создали
+            while (node != null)
+            {
+                temp.list.AddLast(node.Value);
+                node = node.Next;
+            }
+            //удаляем value не в this-классе, а в созданном только что объекте и возвращаем его
+            temp.list.RemoveFirst();
+            return temp;
         }
+        //аналог метода Peek() в стеке, показывающий первый элемент очереди
         public T First()
         {
-            return que.First();
+            return list.First();
         }
         
     }
+    //класс, реализующий иммутабельный стек
     public class ImmStack<T>
     {
-        Stack<T> stack = new Stack<T>();
+        private List<T> list = new List<T>();
+        //метод, добавляющий value в неизменяемый стек и возвращающий новый стек
         public ImmStack<T> Push(T value)
         {
-            stack.Push(value);
-            return this;
+            //создаем объект данного класса, который будем возвращать
+            ImmStack<T> temp = new ImmStack<T>();
+            //копируем значения из данного this-класса в наш обЪект, который мы только что создали
+            foreach (T item in list)
+            {
+                temp.list.Add(item);
+            }
+            temp.list.Add(value);
+            return temp;
         }
+        //метод, извлекающий элемент из верхушки неизменяемого стека и возвращающий новый стек
         public ImmStack<T> Pop()
         {
-            stack.Pop();
-            return this;
+            //создаем объект данного класса, который будем возвращать
+            ImmStack<T> temp = new ImmStack<T>();
+            //копируем значения из данного this-класса в наш обЪект, который мы только что создали
+            foreach (T item in list)
+            {
+                temp.list.Add(item);
+            }
+            temp.list.RemoveAt(temp.list.Count - 1);
+            return temp;
         }
+        //показывает верхний элемент стека, не удаляя его
         public T Peek()
         {
-            return stack.Peek();
+            return list.Last();
         }
     }
 }
