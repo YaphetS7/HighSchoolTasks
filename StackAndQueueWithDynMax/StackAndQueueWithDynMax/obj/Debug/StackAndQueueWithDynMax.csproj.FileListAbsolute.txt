@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\obj\Debug\StackAndQueueWithDynMax.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\obj\Debug\StackAndQueueWithDynMax.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\bin\Debug\StackAndQueueWithDynMax.exe.config
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\bin\Debug\StackAndQueueWithDynMax.exe
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\bin\Debug\StackAndQueueWithDynMax.pdb
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\obj\Debug\StackAndQueueWithDynMax.exe
+C:\Users\Даниил\source\repos\StackAndQueueWithDynMax\StackAndQueueWithDynMax\obj\Debug\StackAndQueueWithDynMax.pdb

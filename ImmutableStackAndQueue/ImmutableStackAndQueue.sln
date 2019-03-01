@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableStackAndQueue", "ImmutableStackAndQueue\ImmutableStackAndQueue.csproj", "{EAABE801-5970-4DD6-965E-47FF55BF131C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsForTask", "TestsForTask\TestsForTask.csproj", "{FAB8B83E-0581-4945-A264-AC2FEC4C86C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAABE801-5970-4DD6-965E-47FF55BF131C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAABE801-5970-4DD6-965E-47FF55BF131C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAABE801-5970-4DD6-965E-47FF55BF131C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAABE801-5970-4DD6-965E-47FF55BF131C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB8B83E-0581-4945-A264-AC2FEC4C86C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB8B83E-0581-4945-A264-AC2FEC4C86C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB8B83E-0581-4945-A264-AC2FEC4C86C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB8B83E-0581-4945-A264-AC2FEC4C86C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {089435D5-64E0-43E8-9E11-547616598894}
+	EndGlobalSection
+EndGlobal

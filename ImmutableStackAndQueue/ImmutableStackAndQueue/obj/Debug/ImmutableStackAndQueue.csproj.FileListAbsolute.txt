@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\bin\Debug\ImmutableStackAndQueue.exe.config
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\bin\Debug\ImmutableStackAndQueue.exe
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\bin\Debug\ImmutableStackAndQueue.pdb
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\obj\Debug\ImmutableStackAndQueue.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\obj\Debug\ImmutableStackAndQueue.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\obj\Debug\ImmutableStackAndQueue.exe
+C:\Users\Даниил\source\repos\ImmutableStackAndQueue\ImmutableStackAndQueue\obj\Debug\ImmutableStackAndQueue.pdb
