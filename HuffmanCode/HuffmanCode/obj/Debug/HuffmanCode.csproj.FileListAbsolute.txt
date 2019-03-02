@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\bin\Debug\HuffmanCode.exe.config
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\bin\Debug\HuffmanCode.exe
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\bin\Debug\HuffmanCode.pdb
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\obj\Debug\HuffmanCode.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\obj\Debug\HuffmanCode.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\obj\Debug\HuffmanCode.exe
+C:\Users\Даниил\source\repos\HuffmanCode\HuffmanCode\obj\Debug\HuffmanCode.pdb
