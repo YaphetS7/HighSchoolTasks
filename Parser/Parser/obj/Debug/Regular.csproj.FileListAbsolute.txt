@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Regular\Regular\bin\Debug\Regular.exe.config
+C:\Users\Даниил\source\repos\Regular\Regular\bin\Debug\Regular.exe
+C:\Users\Даниил\source\repos\Regular\Regular\bin\Debug\Regular.pdb
+C:\Users\Даниил\source\repos\Regular\Regular\obj\Debug\Regular.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Regular\Regular\obj\Debug\Regular.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Regular\Regular\obj\Debug\Regular.exe
+C:\Users\Даниил\source\repos\Regular\Regular\obj\Debug\Regular.pdb
