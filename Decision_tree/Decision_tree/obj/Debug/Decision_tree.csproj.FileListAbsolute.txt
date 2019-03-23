@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\bin\Debug\Decision_tree.exe.config
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\bin\Debug\Decision_tree.exe
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\bin\Debug\Decision_tree.pdb
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\obj\Debug\Decision_tree.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\obj\Debug\Decision_tree.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\obj\Debug\Decision_tree.exe
+C:\Users\Даниил\source\repos\Decision_tree\Decision_tree\obj\Debug\Decision_tree.pdb
