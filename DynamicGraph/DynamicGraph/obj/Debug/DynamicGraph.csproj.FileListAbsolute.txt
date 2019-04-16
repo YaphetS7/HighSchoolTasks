@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\bin\Debug\DynamicGraph.exe.config
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\bin\Debug\DynamicGraph.exe
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\bin\Debug\DynamicGraph.pdb
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\obj\Debug\DynamicGraph.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\obj\Debug\DynamicGraph.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\obj\Debug\DynamicGraph.exe
+C:\Users\Даниил\source\repos\DynamicGraph\DynamicGraph\obj\Debug\DynamicGraph.pdb
