@@ -23,9 +23,10 @@ namespace DynamicGraph
             g.AddEdge(b, c);
             g.AddEdge(a, c);
             g.AddEdge(a, d);
-            foreach(Edge<int> edge in g.edges)
+            foreach(Set<int> set in g.list)
             {
-                Console.WriteLine(edge.left.value + " " + edge.right.value); // 0 3
+                foreach (Edge<int> edge in set.edges)
+                    Console.WriteLine(edge.left.value + " " + edge.right.value); // 0 3
             }
         }
     }
@@ -76,6 +77,11 @@ namespace DynamicGraph
         /// </summary>
         public Node<T> root;
 
+        /// <summary>
+        /// Список мостов(ребер, при удалении которых увеличивается кол-во компонент связности).
+        /// </summary>
+        public List<Edge<T>> edges = new List<Edge<T>>();
+
         public List<Node<T>> nodes = new List<Node<T>>();
         public void AddRoot(Node<T> root)
         {
@@ -94,10 +100,7 @@ namespace DynamicGraph
         /// </summary>
         public List<Set<T>> list = new List<Set<T>>();
 
-        /// <summary>
-        /// Список мостов(ребер, при удалении которых увеличивается кол-во компонент связности).
-        /// </summary>
-        public List<Edge<T>> edges = new List<Edge<T>>();
+      
 
         /// <summary>
         /// Количество текущих подграфов(компонент связности).
@@ -118,7 +121,7 @@ namespace DynamicGraph
         }
 
         /// <summary>
-        /// Ищет представителя компоненты связности. Использует эвристику сжатия путей, переподвешивая вершины к представителю компоненты связности.
+        /// Ищет представителя компоненты связности.
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
@@ -144,16 +147,12 @@ namespace DynamicGraph
                 second.childs.Add(first);
                 if (first.parent == second.parent)//если добавляется ребро для узлов в одной компоненте связности
                 {
-                    edges.Clear();
+                   
                     CheckOnEdges();
                 }
                 else
                 {
                     Unite(first, second);
-                    Edge<T> edge = new Edge<T>();
-                    edge.left = first;
-                    edge.right = second;
-                    edges.Add(edge);
                 }
             }
         }
@@ -171,13 +170,16 @@ namespace DynamicGraph
             }
             first.childs.Remove(second);
             second.childs.Remove(first);
-            foreach(Edge<T> edge in edges)
+            foreach (Set<T> set in list)
             {
-                if((edge.left == first || edge.right == first) && (edge.left == second || edge.right == second))//если удаляется мост
+                foreach (Edge<T> edge in set.edges)
                 {
-                    edges.Remove(edge);
-                    Split(first, second);
-                    break;
+                    if ((edge.left == first || edge.right == first) && (edge.left == second || edge.right == second))//если удаляется мост
+                    {
+                        set.edges.Remove(edge);
+                        Split(first, second);
+                        break;
+                    }
                 }
             }
         }
@@ -238,7 +240,7 @@ namespace DynamicGraph
             }
         }
         public int timer = 0;
-        private void DFS(Node<T> v, Node<T> parent)
+        private void DFS(Node<T> v, Node<T> parent, Set<T> set)
         {
             v.hit = true;
             v.tin = v.fup = timer++;
@@ -252,10 +254,10 @@ namespace DynamicGraph
                 }
                 else
                 {
-                    DFS(child, v);
+                    DFS(child, v, set);
                     v.fup = Math.Min(v.fup, child.fup);
                     if (child.fup > v.tin)
-                        edges.Add(new Edge<T>(child, v));
+                        set.edges.Add(new Edge<T>(child, v));
                 }
             }
             
@@ -265,9 +267,10 @@ namespace DynamicGraph
         {
             foreach(Set<T> set in list)
             {
+                set.edges.Clear();
                 foreach (Node<T> node in set.nodes)
                 {
-                    DFS(node, null);
+                    DFS(node, null, set);
                 }
                 HitOff(set);
             }
@@ -291,6 +294,7 @@ namespace DynamicGraph
             foreach (Node<T> node in node2.childs)
                 node.parent = node2;
 
+            temp.edges.Add(new Edge<T>(first, second));
             temp.nodes.AddRange(node1.childs);
             temp.nodes.AddRange(node2.childs);
             temp.nodes.Remove(node1);
