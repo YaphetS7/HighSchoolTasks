@@ -1,0 +1,7 @@
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\bin\Debug\ET_tree.exe.config
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\bin\Debug\ET_tree.exe
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\bin\Debug\ET_tree.pdb
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\obj\Debug\ET_tree.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\obj\Debug\ET_tree.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\obj\Debug\ET_tree.exe
+C:\Users\Даниил\source\repos\ET_tree\ET_tree\obj\Debug\ET_tree.pdb
