@@ -1,0 +1,4 @@
+q1,true,++,R,q2
+q1,false,++,L,q2
+q2,true,--,R,q1
+q2,false,--,L,q1
