@@ -8,8 +8,13 @@ namespace RAM
 {
     class RAM
     {
-        private int[] arr = new int[10000];
-        private int[] temp = new int[10000];
+        private int[] arr;
+        private int[] temp;
+        public RAM(int length)
+        {
+            arr = new int[length + 1];
+            temp = new int[length + 1];
+        }
         public void Read(int value)
         {
             arr[0] = value;

@@ -23,7 +23,6 @@ namespace RAM
             button_stop.Enabled = false;
             timer1.Interval = 500;
             code.Enabled = false;
-            ram = new RAM();
         }
         private void Render()
         {
@@ -130,6 +129,14 @@ namespace RAM
             button_run.Enabled = true;
             button_next.Enabled = true;
             code.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cnt.Text == "")
+                return;
+            ram = new RAM(Convert.ToInt32(cnt.Text));
+            cnt.Enabled = false;
         }
     }
 }
