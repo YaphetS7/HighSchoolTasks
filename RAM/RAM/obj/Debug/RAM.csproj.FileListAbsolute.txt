@@ -1,0 +1,10 @@
+C:\Users\Даниил\source\repos\RAM\RAM\bin\Debug\RAM.exe.config
+C:\Users\Даниил\source\repos\RAM\RAM\bin\Debug\RAM.exe
+C:\Users\Даниил\source\repos\RAM\RAM\bin\Debug\RAM.pdb
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.Form1.resources
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.Properties.Resources.resources
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.csproj.GenerateResource.cache
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.exe
+C:\Users\Даниил\source\repos\RAM\RAM\obj\Debug\RAM.pdb
