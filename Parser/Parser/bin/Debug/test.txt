@@ -8,8 +8,8 @@ class Program
         Test test = new Test();
         int c = 10;
         int b = 12;
-        int s = 100;
-        int a = test.GetAge(c, b, s);
+        string s = "100";
+        string a = test.GetAge(c, b, s);
 
 
 
